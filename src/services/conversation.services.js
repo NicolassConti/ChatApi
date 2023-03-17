@@ -1,7 +1,7 @@
 const Conversation = require("../models/conversation.models");
 const Message = require("../models/message.models");
 const Participant = require("../models/participant.models");
-const User = require("../models/users.models");
+const User = require("../models/user.models");
 
 class conversationServices {
     static async create(newConversation) {

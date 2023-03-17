@@ -33,19 +33,8 @@ const getConversationId = async(req, res, next)=>{
     }
 }
 
-const deleteUser  = async (req, res, next) => {
-    try {
-        const {id} = req.params
-        const result = await userServices.delete(req.params.id);
-        res.status(204).json("no content");
-    } catch (error) {
-        next(error);
-    }
-}
-
 module.exports = {
     createUser,
     getAllUsers,
     getConversationId,
-    deleteUser
 }

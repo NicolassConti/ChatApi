@@ -1,4 +1,4 @@
-const User = require("../models/users.models")
+const User = require("../models/user.models")
 const Participant = require("../models/participant.models")
 const Conversation = require("../models/conversation.models")
 
@@ -48,15 +48,6 @@ class userServices {
             return result
         } catch (error) {
             throw (error)
-        }
-    }
-    static async delete(id) {
-        try {
-            const result = await User.destroy({
-                where : {id}
-            })
-        } catch (error) {
-            throw error;
         }
     }
 }

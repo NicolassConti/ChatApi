@@ -1,4 +1,4 @@
-const User = require("../models/users.models");
+const User = require("./user.models");
 const Conversation = require("../models/conversation.models");
 const Message = require("../models/message.models");
 const Partipants = require("../models/participant.models");
